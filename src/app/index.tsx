@@ -7,6 +7,7 @@ export default function Index (){ //exportanto por padrao a funcao index
             <Text>eU SOU o meelhor homem arannnnhaa</Text> 
             <Text>cru cru cru</Text>
             <Text> cri cri cri</Text>
+            <Text>la la la la la la </Text>
           
         </View>
     );
