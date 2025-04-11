@@ -3,16 +3,23 @@ import { View, Text, StyleSheet } from "react-native";
 export default function Index (){ //exportanto por padrao a funcao index
     return ( //ele entrega tudo que esta aqui dentro(uso externo)
        //view é comparada a div
-       <View> 
-            <Text  style={style.title}>eU SOU o meelhor homem arannnnhaa</Text> 
-            <Text style={style.title2}>cru cru cru</Text>
-            <Text style={style.title3}> cri cri cri</Text>
-            <Text style={style.title4}>la la la la la la </Text>
+       <View style={styles.container}> 
+            <Text  style={styles.title}>eU SOU o meelhor homem arannnnhaa</Text> 
+            <Text style={styles.title2}>cru cru cru</Text>
+            <Text style={styles.title3}> cri cri cri</Text>
+            <Text style={styles.title4}>la la la la la la </Text>
           
         </View>
     );
 }
-const style = StyleSheet.create({ //uma variavel style que pega tudo o que ta sendo criado
+const styles = StyleSheet.create({ //uma variavel style que pega tudo o que ta sendo criado
+    container: {
+        flex: 1, //flex se referindo toda a tela 
+        justifyContent: "center", //ajusta todos os elementos no centro da tela no meiog
+        alignItems: "center", //alinhando os itens no centro 
+        flexDirection: "row", //colocanto os itens dentro do flebox em linha 
+
+    },
     title: { // esse ta estlizando o title. title foi o nome que colocamos naquela estilizacao a cima
         color: "red",
         fontSize: 22
