@@ -245,7 +245,7 @@ const styles = StyleSheet.create({
 
 ## Passo 13: Separando a parte de Stylização da parte Estrutural do Componente
 
-* Cada componente criado terá seu arquivo de estilização separa.
+* Cada componente criado terá seu arquivo de estilização separada.
 
 #### Etapa 01: Criar uma pasta com o mesmo nome do Componente e criar um arquivo de Styles la dentro
 

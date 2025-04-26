@@ -1,4 +1,5 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, } from "react-native";
+import {colors} from "../../styles/colors"
 // Export default é o metodo usado para dizer ao ExporRouter que esse componente é uma Rota
 export default function Index (){ //exportanto por padrao a funcao index
     return ( //ele entrega tudo que esta aqui dentro(uso externo)
@@ -15,14 +16,22 @@ export default function Index (){ //exportanto por padrao a funcao index
 const styles = StyleSheet.create({ //uma variavel style que pega tudo o que ta sendo criado
     container: {
         flex: 1, //flex se referindo toda a tela 
-        justifyContent: "center", //ajusta todos os elementos no centro da tela no meiog
-        alignItems: "center", //alinhando os itens no centro 
-        flexDirection: "row", //colocanto os itens dentro do flebox em linha 
+        justifyContent: "center", //ajusta todos os elementos no centro acima
+        
+       alignItems: "center", //alinhando os itens no centro bem no meio da tela
+        //alignItems: "flex-start", //alinhando os itens no no lado esquerdo
+        //flexDirection: "row", //colocanto os itens dentro do flebox em linha 
+        flexDirection: "column", //colocando os itens verticalmente em coluna 
+        //codigo pra identificar as extremidades do Container (pq ta colocando a borda no flex- controlador do tamanho da tela)
+        borderColor: "red",
+        borderWidth: 3
 
     },
     title: { // esse ta estlizando o title. title foi o nome que colocamos naquela estilizacao a cima
-        color: "red",
-        fontSize: 22
+        color: colors.green [900],
+        fontSize: 22,
+      
+
     },
 
     title2: {
@@ -39,6 +48,7 @@ const styles = StyleSheet.create({ //uma variavel style que pega tudo o que ta s
         color:"green",
         fontSize: 22
     }
+
 
 
 })
